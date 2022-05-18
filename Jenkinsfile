@@ -5,7 +5,7 @@ node('JDK8') {
     }
 
     stage('Build the code') {
-        sh 'mvn package'
+        sh 'mvn clean package'
     }
 
     stage('Archiving and Test Results') {
